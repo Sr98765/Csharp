@@ -143,3 +143,38 @@ foreach (string name in studentNames)
 Console.WriteLine("\n\rPress the Enter key to continue");
 Console.ReadLine();
 Console.WriteLine("You got your results");
+
+
+
+
+
+//Review the solution to the Boolean expressions challenge activity
+string permission = "Admin|Manager";
+int level = 53;
+
+if (permission.Contains("Admin"))
+{
+    if (level > 55)
+    {
+        Console.WriteLine("Welcome, Super Admin user.");
+    }
+    else
+    {
+        Console.WriteLine("Welcome, Admin user.");
+    }
+}
+else if (permission.Contains("Manager"))
+{
+    if (level >= 20)
+    {
+        Console.WriteLine("Contact an Admin for access.");
+    }
+    else
+    {
+        Console.WriteLine("You do not have sufficient privileges.");
+    }
+}
+else
+{
+    Console.WriteLine("You do not have sufficient privileges.");
+}
